@@ -1,1 +1,10 @@
-
+{
+  "name": "Cashier System",
+  "dockerFile": "Dockerfile",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {},
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "forwardPorts": [5000, 5173],
+  "postCreateCommand": "pip install -r backend/requirements.txt && npm --prefix frontend install"
+}
